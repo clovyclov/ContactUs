@@ -24,5 +24,11 @@ namespace ContactUs
         {
             InitializeComponent();
         }
+
+        private void addContactButton_Click(object sender, RoutedEventArgs e)
+        {
+            NewContactWindow newContactWindow = new NewContactWindow();
+            newContactWindow.ShowDialog();
+        }
     }
 }
