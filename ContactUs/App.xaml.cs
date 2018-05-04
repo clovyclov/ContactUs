@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,8 +14,9 @@ namespace ContactUs
     /// </summary>
     public partial class App : Application
     {
-        public static string db_name = "ContactUs.db";
-        public static string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        static string db_name = "ContactUs.db";
+        static string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         public static string db_path = System.IO.Path.Combine(folderPath, db_name);
+        
     }
 }

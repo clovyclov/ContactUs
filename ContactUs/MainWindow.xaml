@@ -10,5 +10,6 @@
     <Button Content="New Contact"
             x:Name="addContactButton"
             Click="addContactButton_Click" />
+    <ListView x:Name="contactsListView" />
   </StackPanel>
 </Window>

@@ -44,7 +44,7 @@ namespace ContactUs
                 conn.Insert(contact);
             }
 
-
+            //Closes this window
             this.Close();
         }
     }
